@@ -3,14 +3,12 @@ import subprocess
 from urllib.request import urlopen
 from urllib.error import HTTPError, URLError
 
-# 尝试导入 importlib.metadata，如果是 Python 3.8 之前的版本，导入 importlib_metadata 包
 try:
     from importlib.metadata import version, PackageNotFoundError
 except ImportError:
-    from importlib_metadata import version, PackageNotFoundError  # 对于 Python 3.7 及更早版本
+    from importlib_metadata import version, PackageNotFoundError
 
 def is_installed(module_name):
-    """检查模块是否已经安装，并返回版本号"""
     try:
         dist_version = version(module_name)
         return True, dist_version
@@ -21,7 +19,6 @@ def is_installed(module_name):
         return False, None
 
 def is_valid_module(module_name):
-    """检查模块是否为有效的 PyPI 库"""
     url = f"https://pypi.org/project/{module_name}/"
     try:
         response = urlopen(url)
@@ -33,7 +30,6 @@ def is_valid_module(module_name):
         return False
 
 def install_module(module_name):
-    """安装模块"""
     try:
         subprocess.run([sys.executable, "-m", "pip", "install", module_name], check=True)
         print(f"模块“{module_name}”已安装。")
@@ -41,7 +37,6 @@ def install_module(module_name):
         print(f"安装模块“{module_name}”失败，错误信息：{e}")
 
 def update_module(module_name):
-    """更新模块"""
     try:
         subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", module_name], check=True)
         print(f"模块“{module_name}”已更新。")
@@ -49,7 +44,6 @@ def update_module(module_name):
         print(f"更新模块“{module_name}”失败，错误信息：{e}")
 
 def uninstall_module(module_name):
-    """卸载模块"""
     try:
         subprocess.run([sys.executable, "-m", "pip", "uninstall", module_name, "-y"], check=True)
         print(f"模块“{module_name}”已删除。")
