@@ -2,20 +2,56 @@
 
 （PyPM - Python Package Manager）
 
-目前只提供简单的 Python 包查询管理功能，运行时输入包名称，检测其是否已安装或存在于PyPI，未安装则可以选择安装，已安装则可以选择更新或卸载。命令执行基于 pip 命令，节省命令输入时间。
+提供 Python 包扫描和基本的管理功能
 
-## 使用方式
+## 使用
 
-下载 PyPM.py 运行即可。
+有打包好的 Win64 版本的 exe 可执行文件，当然也可以下载源代码 `PyPM_UI.py` 在 Windows 的 Python 环境下运行
 
-后续计划开发出图形化界面，以及更多便捷的功能（有空的话）。
+## 特色
+
+- 一键检查 **更新** 和 **卸载**
+- 可以管理 **多版本** Python 的包
+- 列表展示所有已安装包及 **版本**
+- 支持使用国内主流 **镜像源**
+- 拥有较友好的 **UI 界面**
+
+## 运行图
+
+![image-20250208084138260](./screenshot.png)
+
+## 反馈
+
+如发现 bug 或有问题等欢迎提交 Issues
+
+## 其他
+
+**代码贡献度**：DeepSeek 99% + 我自己 1%
+
+**后续开发计划：**考虑加上添加自定义镜像源功能，增加不同版本以适配不同的操作系统等等（目前没更多好的点子了），如果这个东西真的有用帮到很多人的话
 
 # Python Package Manager
 
-At present, it only provides a simple Python package query management function, enter the package name at runtime, check whether it is installed or exist in PyPI, you can choose to install if it is not installed, and you can choose to update or uninstall if it is installed. Command execution is based on pip commands, saving command input time.
+（PyPM - Python Package Manager）
 
-## How to use
+Provides Python package scanning and basic management features
 
-Download PyPM_En.py Run it.
+## Use
 
-We plan to develop a graphical interface and more convenient features.
+There is a packaged Win64 version of the executable, and of course you can also download the source code 'PyPM_UI.py' to run it in the Windows Python environment
+
+## Features
+
+- One-click check **Update** and **Uninstall**
+- Can manage packages for multiple versions of Python
+- List of all installed packages and **versions**
+- Support the use of domestic mainstream **Image source**
+- Have a more user-friendly **UI**
+
+## Feedback
+
+If you find a bug or have a problem, please submit an issue
+
+## Others
+
+**Follow-up development plan:** Consider adding the ability to add custom image sources, adding different versions to adapt to different operating systems, etc. (there are no more good ideas at the moment), if this thing is really useful and helps a lot of people
