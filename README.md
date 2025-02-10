@@ -28,21 +28,21 @@
 
 **代码贡献度**：DeepSeek 99% + 我自己 1%
 
-**后续开发计划：**考虑加上添加自定义镜像源功能，增加不同版本以适配不同的操作系统等等（目前没更多好的点子了），如果这个东西真的有用帮到很多人的话
+**后续开发计划**：考虑加上添加自定义镜像源功能，增加不同版本以适配不同的操作系统等等（目前没更多好的点子了），如果这个东西真的有用帮到很多人的话
 
 # Python Package Manager
 
 （PyPM - Python Package Manager）
 
-Provides Python package scanning and basic management features
+Provides Python package scanning 和 basic management features
 
-## Use
+## 使用
 
-There is a packaged Win64 version of the executable, and of course you can also download the source code 'PyPM_UI.py' to run it in the Windows Python environment
+There is a packaged Win64 version of the executable, 和 of course you can also download the source code 'PyPM_UI.py' to run it in the Windows Python environment
 
 ## Features
 
-- One-click check **Update** and **Uninstall**
+- One-click check **更新** 和 **Uninstall**
 - Can manage packages for multiple versions of Python
 - List of all installed packages and **versions**
 - Support the use of domestic mainstream **Image source**
@@ -54,4 +54,4 @@ If you find a bug or have a problem, please submit an issue
 
 ## Others
 
-**Follow-up development plan:** Consider adding the ability to add custom image sources, adding different versions to adapt to different operating systems, etc. (there are no more good ideas at the moment), if this thing is really useful and helps a lot of people
+**Follow-up development plan:** Consider adding the ability to add custom image sources, adding different versions to adapt to different operating systems, etc. (there are no more good ideas at the moment), if this thing is really useful 和 helps a lot of people
