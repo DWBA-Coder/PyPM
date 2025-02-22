@@ -36,13 +36,13 @@
 
 Provides Python package scanning 和 basic management features
 
-## 使用
+## Using
 
 There is a packaged Win64 version of the executable, 和 of course you can also download the source code 'PyPM_UI.py' to run it in the Windows Python environment
 
 ## Features
 
-- One-click check **更新** 和 **Uninstall**
+- One-click check **Update** 和 **Uninstall**
 - Can manage packages for multiple versions of Python
 - List of all installed packages and **versions**
 - Support the use of domestic mainstream **Image source**
